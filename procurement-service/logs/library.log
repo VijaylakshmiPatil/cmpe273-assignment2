@@ -1,0 +1,1370 @@
+INFO  [2014-04-06 03:34:19,604] org.reflections.Reflections: Reflections took 384 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 03:34:21,057] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 03:34:21,118] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 03:34:21,324] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 03:34:21,329] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 03:34:21,592] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 03:34:21,741] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 03:34:21,741] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 03:34:22,775] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 03:34:22,786] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 03:34:22,905] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 03:34:22,911] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 03:34:22,925] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 03:34:22,927] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 03:34:22,927] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 03:34:22,928] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 03:34:22,928] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 03:34:22,946] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 03:34:22,948] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 03:34:23,100] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 03:34:23,122] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 03:34:23,154] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 03:34:25,993] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:34:29,421] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:34:34,499] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:34:39,485] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:34:44,440] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:34:49,753] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:34:54,427] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:34:59,637] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:35:04,781] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 03:36:08,824] org.reflections.Reflections: Reflections took 276 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 03:36:09,831] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 03:36:09,877] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 03:36:10,057] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 03:36:10,062] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 03:36:10,287] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 03:36:10,371] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 03:36:10,371] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 03:36:10,924] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 03:36:10,933] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 03:36:10,991] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 03:36:10,995] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 03:36:10,999] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 03:36:11,001] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 03:36:11,001] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 03:36:11,001] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 03:36:11,002] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 03:36:11,012] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 03:36:11,014] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 03:36:11,072] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 03:36:11,093] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 03:36:11,112] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 03:36:17,443] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:36:21,506] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:36:26,627] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 03:45:08,420] org.reflections.Reflections: Reflections took 279 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 03:45:09,525] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 03:45:09,573] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 03:45:09,753] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 03:45:09,758] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 03:45:09,971] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 03:45:10,046] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 03:45:10,046] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 03:45:10,575] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 03:45:10,584] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 03:45:10,641] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 03:45:10,645] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 03:45:10,650] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 03:45:10,653] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 03:45:10,653] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 03:45:10,653] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 03:45:10,654] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 03:45:10,667] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 03:45:10,669] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 03:45:10,730] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 03:45:10,754] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 03:45:10,773] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 03:45:17,116] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:21,229] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:26,288] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:31,237] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:36,457] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:41,639] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:46,267] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:51,216] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:45:56,236] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:46:01,243] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:46:06,219] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:46:11,514] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:46:16,192] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:46:21,275] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 03:48:13,145] org.reflections.Reflections: Reflections took 273 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 03:48:14,220] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 03:48:14,274] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 03:48:14,461] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 03:48:14,466] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 03:48:14,695] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 03:48:14,776] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 03:48:14,777] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 03:48:15,368] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 03:48:15,378] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 03:48:15,488] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 03:48:15,493] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 03:48:15,497] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 03:48:15,499] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 03:48:15,499] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 03:48:15,499] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 03:48:15,500] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 03:48:15,511] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 03:48:15,513] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 03:48:15,539] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 03:48:15,558] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 03:48:15,582] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 03:48:22,270] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:48:26,571] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:48:31,130] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:48:36,107] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:48:41,084] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:48:46,107] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:48:51,151] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:48:59,401] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:49:02,250] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+ERROR [2014-04-06 03:49:06,995] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-9568b2cb-56fe-47cd-ac4f-4f160dddb866 threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:91) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 03:49:06,997] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-9568b2cb-56fe-47cd-ac4f-4f160dddb866 threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:91) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+DEBUG [2014-04-06 03:49:11,053] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:49:16,326] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:49:21,090] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 03:49:26,042] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:02:17,802] org.reflections.Reflections: Reflections took 283 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:02:18,960] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:02:19,009] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:02:19,198] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:02:19,203] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:02:19,433] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:02:19,525] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:02:19,526] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:02:20,110] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:02:20,119] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:02:20,180] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:02:20,185] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:02:20,188] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:02:20,190] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:02:20,191] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:02:20,191] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:02:20,191] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:02:20,202] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:02:20,204] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:02:20,262] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:02:20,288] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:02:20,310] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:02:26,720] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:07:26,179] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:12:45,990] org.reflections.Reflections: Reflections took 292 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:12:47,110] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:12:47,158] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:12:47,346] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:12:47,351] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:12:47,567] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:12:47,644] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:12:47,645] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:12:48,183] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:12:48,192] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:12:48,260] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:12:48,265] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:12:48,268] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:12:48,270] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:12:48,270] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:12:48,270] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:12:48,272] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:12:48,283] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:12:48,285] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:12:48,346] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:12:48,366] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:12:48,390] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:12:57,271] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:13:01,352] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:13:03,807] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:13:08,781] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:13:14,087] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:13:19,111] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:13:23,811] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:13:28,923] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:15:28,765] org.reflections.Reflections: Reflections took 322 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:15:30,048] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:15:30,099] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:15:30,291] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:15:30,297] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:15:30,513] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:15:30,590] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:15:30,591] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:15:31,184] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:15:31,194] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:15:31,261] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:15:31,265] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:15:31,269] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:15:31,272] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:15:31,272] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:15:31,272] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:15:31,272] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:15:31,284] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:15:31,286] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:15:31,342] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:15:31,367] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:15:31,388] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:15:38,008] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:15:41,763] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:19:04,322] org.reflections.Reflections: Reflections took 276 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:19:05,436] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:19:05,482] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:19:05,665] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:19:05,670] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:19:05,894] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:19:05,972] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:19:05,972] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:19:06,508] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:19:06,517] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:19:06,580] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:19:06,585] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:19:06,588] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:19:06,591] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:19:06,591] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:19:06,591] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:19:06,591] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:19:06,602] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:19:06,604] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:19:06,662] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:19:06,687] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:19:06,712] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+INFO  [2014-04-06 04:20:12,782] org.reflections.Reflections: Reflections took 144 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:20:13,360] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:20:13,385] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:20:13,482] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:20:13,484] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:20:13,600] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:20:13,679] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:20:13,679] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:20:14,204] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:20:14,213] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:20:14,269] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:20:14,274] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:20:14,277] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:20:14,279] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:20:14,279] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:20:14,279] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:20:14,279] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:20:14,290] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:20:14,292] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:20:14,353] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:20:14,374] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:20:14,394] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:20:21,286] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:24,820] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:29,814] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:35,071] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:39,836] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:44,900] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:49,830] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:54,791] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:20:59,840] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:21:04,927] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:21:09,888] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:22:46,597] org.reflections.Reflections: Reflections took 220 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:22:47,576] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:22:47,622] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:22:47,802] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:22:47,807] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:22:48,015] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:22:48,089] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:22:48,090] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:22:48,614] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:22:48,623] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:22:48,681] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:22:48,685] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:22:48,688] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:22:48,690] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:22:48,690] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:22:48,691] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:22:48,691] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:22:48,701] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:22:48,703] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:22:48,764] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:22:48,786] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:22:48,805] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:22:55,273] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:22:59,408] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:24:37,236] org.reflections.Reflections: Reflections took 168 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:24:38,073] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:24:38,120] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:24:38,302] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:24:38,307] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:24:38,524] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:24:38,605] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:24:38,605] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:24:39,137] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:24:39,144] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:24:39,230] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:24:39,234] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:24:39,237] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:24:39,239] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:24:39,239] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:24:39,239] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:24:39,239] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:24:39,248] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:24:39,250] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:24:39,271] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:24:39,288] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:24:39,306] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:24:45,955] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:24:49,832] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:24:54,807] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:27:05,368] org.reflections.Reflections: Reflections took 273 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:27:06,497] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:27:06,548] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:27:06,735] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:27:06,740] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:27:06,958] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:27:07,035] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:27:07,035] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:27:07,587] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:27:07,596] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:27:07,658] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:27:07,663] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:27:07,666] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:27:07,669] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:27:07,669] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:27:07,669] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:27:07,669] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:27:07,680] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:27:07,682] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:27:07,737] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:27:07,761] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:27:07,781] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:27:14,758] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:18,383] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:23,468] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:28,336] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:33,712] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:38,639] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:43,410] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:48,320] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:27:53,443] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:36:36,683] org.reflections.Reflections: Reflections took 267 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:36:37,657] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:36:37,693] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:36:37,846] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:36:37,850] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:36:38,061] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:36:38,135] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:36:38,135] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:36:38,661] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:36:38,670] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:36:38,725] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:36:38,730] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:36:38,733] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:36:38,735] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:36:38,735] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:36:38,735] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:36:38,735] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:36:38,746] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:36:38,748] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:36:38,774] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:36:38,827] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:36:38,848] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+ERROR [2014-04-06 04:36:52,300] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:36:52,302] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+DEBUG [2014-04-06 04:36:55,921] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+ERROR [2014-04-06 04:37:01,293] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:37:01,294] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:37:05,436] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:37:05,437] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:37:09,948] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:37:09,949] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-9e85f1a0-1481-4ae9-9308-4ea2394007fa threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+DEBUG [2014-04-06 04:37:15,658] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:37:18,746] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:39:50,978] org.reflections.Reflections: Reflections took 272 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:39:52,053] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:39:52,103] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:39:52,285] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:39:52,290] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:39:52,501] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:39:52,577] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:39:52,577] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:39:53,107] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:39:53,116] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:39:53,174] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:39:53,178] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:39:53,182] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:39:53,184] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:39:53,184] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:39:53,184] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:39:53,185] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:39:53,196] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:39:53,197] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:39:53,225] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:39:53,283] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:39:53,303] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:40:07,528] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:40:09,132] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+ERROR [2014-04-06 04:40:15,332] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-165a786a-33e9-4c04-ab00-7dd4a1992997 threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:40:15,334] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-165a786a-33e9-4c04-ab00-7dd4a1992997 threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+DEBUG [2014-04-06 04:40:19,467] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+INFO  [2014-04-06 04:41:54,532] org.reflections.Reflections: Reflections took 270 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:41:55,616] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:41:55,663] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:41:55,843] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:41:55,848] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:41:56,058] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:41:56,139] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:41:56,140] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:41:56,657] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:41:56,667] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:41:56,723] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:41:56,727] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:41:56,731] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:41:56,733] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:41:56,733] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:41:56,733] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:41:56,733] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:41:56,744] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:41:56,746] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:41:56,809] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:41:56,829] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:41:56,849] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+ERROR [2014-04-06 04:42:11,180] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-f8ef5497-2f9d-4621-a806-07e9d8931b0f threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:42:11,182] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-f8ef5497-2f9d-4621-a806-07e9d8931b0f threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! java.net.SocketTimeoutException: Read timed out
+! at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:152) ~[na:1.7.0_51]
+! at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[na:1.7.0_51]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:191) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) ~[httpcore-4.2.2.jar:4.2.2]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:717) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:522) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:42:13,777] org.quartz.core.JobRunShell: Job DEFAULT.6da64b5bd2ee-f8ef5497-2f9d-4621-a806-07e9d8931b0f threw an unhandled Exception: 
+! com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+ERROR [2014-04-06 04:42:13,778] org.quartz.core.ErrorLogger: Job (DEFAULT.6da64b5bd2ee-f8ef5497-2f9d-4621-a806-07e9d8931b0f threw an exception.
+! org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:218) ~[quartz-2.2.0.jar:na]
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560) [quartz-2.2.0.jar:na]
+Caused by: ! com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.Client.handle(Client.java:648) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680) ~[jersey-client-1.17.1.jar:1.17.1]
+! at com.sun.jersey.api.client.WebResource.get(WebResource.java:191) ~[jersey-client-1.17.1.jar:1.17.1]
+! at edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob.doJob(ProcurementSchedulerJob.java:92) ~[classes/:na]
+! at de.spinscale.dropwizard.jobs.Job.execute(Job.java:22) ~[classes/:na]
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:207) ~[quartz-2.2.0.jar:na]
+!... 1 common frames omitted
+Caused by: ! org.apache.http.conn.ConnectTimeoutException: Connect to ip.jsontest.com:80 timed out
+! at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:129) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:645) ~[httpclient-4.2.3.jar:4.2.3]
+! at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:480) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.yammer.metrics.httpclient.InstrumentedRequestDirector.execute(InstrumentedRequestDirector.java:81) ~[metrics-httpclient-2.2.0.jar:na]
+! at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) ~[httpclient-4.2.3.jar:4.2.3]
+! at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:168) ~[jersey-apache-client4-1.17.1.jar:1.17.1]
+!... 8 common frames omitted
+INFO  [2014-04-06 04:45:08,131] org.reflections.Reflections: Reflections took 241 ms to scan 1 urls, producing 2 keys and 2 values 
+DEBUG [2014-04-06 04:45:08,914] edu.sjsu.cmpe.procurement.ProcurementService: Queue name is /queue/99999.book.orders. Topic is /topic/99999.book.
+WARN  [2014-04-06 04:45:08,943] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-04-06 04:45:09,080] com.yammer.dropwizard.cli.ServerCommand: Starting procurement-service
+INFO  [2014-04-06 04:45:09,085] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-04-06 04:45:09,302] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-04-06 04:45:09,376] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.procurement.api.resources.RootResource)
+
+INFO  [2014-04-06 04:45:09,376] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-04-06 04:45:09,895] org.quartz.impl.StdSchedulerFactory: Using default implementation for ThreadExecutor
+INFO  [2014-04-06 04:45:09,904] org.quartz.simpl.SimpleThreadPool: Job execution threads will use class loader of thread: main
+INFO  [2014-04-06 04:45:09,963] org.quartz.core.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  [2014-04-06 04:45:09,967] org.quartz.core.QuartzScheduler: Quartz Scheduler v.2.2.0 created.
+INFO  [2014-04-06 04:45:09,971] org.quartz.simpl.RAMJobStore: RAMJobStore initialized.
+INFO  [2014-04-06 04:45:09,973] org.quartz.core.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  [2014-04-06 04:45:09,973] org.quartz.impl.StdSchedulerFactory: Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO  [2014-04-06 04:45:09,973] org.quartz.impl.StdSchedulerFactory: Quartz scheduler version: 2.2.0
+INFO  [2014-04-06 04:45:09,974] org.quartz.core.QuartzScheduler: Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  [2014-04-06 04:45:09,985] de.spinscale.dropwizard.jobs.JobManager: Jobs to run on application start: []
+INFO  [2014-04-06 04:45:09,987] de.spinscale.dropwizard.jobs.JobManager: Jobs with @Every annotation: [class edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob]
+INFO  [2014-04-06 04:45:10,044] de.spinscale.dropwizard.jobs.JobManager: Jobs with @On annotation: []
+INFO  [2014-04-06 04:45:10,070] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9090
+INFO  [2014-04-06 04:45:10,090] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:9000
+DEBUG [2014-04-06 04:45:17,069] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:20,837] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:25,667] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:30,726] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:35,839] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:41,060] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:50,747] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:51,371] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:45:55,654] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:46:00,682] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:46:05,603] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:46:10,651] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:46:15,703] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:46:20,597] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:46:25,716] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+
+DEBUG [2014-04-06 04:46:30,762] edu.sjsu.cmpe.procurement.jobs.ProcurementSchedulerJob: Response from jsontest.com: {"ip": "50.156.90.53"}
+

@@ -57,6 +57,8 @@ public class ProcurementService extends Service<ProcurementServiceConfiguration>
 	String topicName = configuration.getStompTopicPrefix();
 	log.debug("Queue name is {}. Topic is {}", queueName, topicName);
 	// TODO: Apollo STOMP Broker URL and login
+	
+	
 
     }
 }
