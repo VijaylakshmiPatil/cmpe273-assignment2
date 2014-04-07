@@ -177,8 +177,10 @@ public void sendBookOrder(List<Integer> isbnFromQueue){
 		if(response.getStatus() == 200){
 			numMessages = 0;
 			removeIsbn(isbns);
+			String responseFromServer = response.getEntity(String.class);
+			System.out.println(responseFromServer);
 			System.out.println("Status returned on POST: " + response.getStatus());	
-			System.out.println("'msg' : 'Your order was successfully submitted.'");
+			//System.out.println("'msg' : 'Your order was successfully submitted.'");
 		}
 		else{
 			System.out.println("Post Uncuccessful ");

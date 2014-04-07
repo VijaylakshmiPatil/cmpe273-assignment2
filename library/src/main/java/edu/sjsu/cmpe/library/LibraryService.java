@@ -62,6 +62,7 @@ public class LibraryService extends Service<LibraryServiceConfiguration> {
 		bootstrap.setName("library-service");
 		bootstrap.addBundle(new ViewBundle());
 		bootstrap.addBundle(new AssetsBundle());
+		
 		Thread one = new Thread(new Runnable() {
 			public void run() {
 				try {
